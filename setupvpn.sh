@@ -8,3 +8,4 @@ apt-get --assume-yes upgrade
 apt-get --assume-yes install pritunl mongodb-org iptables
 systemctl start pritunl mongod
 systemctl enable pritunl mongodb
+#pre-commit
