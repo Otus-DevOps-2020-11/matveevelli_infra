@@ -4,6 +4,7 @@ matveevelli Infra repository
 ###   Lesson 5 | HomeWork 3
 
 bastion_IP = 130.193.48.231
+
 someinternalhost_IP = 10.130.0.26
 
 для подключения командой **ssh someinternalhost **
