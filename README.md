@@ -7,7 +7,7 @@ bastion_IP = 130.193.48.231
 
 someinternalhost_IP = 10.130.0.26
 
-для подключения командой **ssh someinternalhost **
+для подключения командой **ssh someinternalhost**
 создаём файл **~/.ssh/config** и добавляем в него алиас с удалённой командой
 
     Host someinternalhost
