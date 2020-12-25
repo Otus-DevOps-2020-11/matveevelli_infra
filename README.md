@@ -1,5 +1,10 @@
 # matveevelli_infra
 matveevelli Infra repository
+###   Lesson 6 | HomeWork 4
+
+testapp_IP = 84.201.159.253
+
+testapp_port = 9292
 
 ###   Lesson 5 | HomeWork 3
 
