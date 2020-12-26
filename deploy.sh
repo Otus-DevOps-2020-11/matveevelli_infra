@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 echo "start deploy"
 cd ~
 apt-get install -y git
