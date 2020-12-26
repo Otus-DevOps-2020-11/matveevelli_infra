@@ -2,7 +2,7 @@
 matveevelli Infra repository
 ###   Lesson 6 | HomeWork 4
 
-testapp_IP = 84.201.159.253
+testapp_IP = 84.201.129.36
 
 testapp_port = 9292
 
