@@ -16,7 +16,7 @@ matveevelli Infra repository
 
 "запечен" образ **reddit-full** с предустановленным приложением reddit
 
-создан скрипт **./config-scripts/create-reddit-vm.sh** для поднятия приложения из запеченного образа **reddit-full**
+создан скрипт **./config-scripts/create-reddit-vm.sh** для поднятия ВМ с приложением из запеченного образа **reddit-full**
 
 ###   Lesson 6 | HomeWork 4
 
