@@ -1,5 +1,23 @@
 # matveevelli_infra
 matveevelli Infra repository
+###   Lesson 7 | HomeWork 5
+
+установлен packer
+
+создан сервисный аккаунт и вм при помощи yc
+
+создан IAM key
+
+создан файл-шаблон **ubuntu16.json**
+
+создан базовый образ с помощью packer + с этим образом поднята ВМ, установлено приложение reddit
+
+параметризован шаблон с переменными в **variables.json**
+
+"запечен" образ **reddit-full** с предустановленным приложением reddit
+
+создан скрипт **./config-scripts/create-reddit-vm.sh** для поднятия приложения из запеченного образа **reddit-full**
+
 ###   Lesson 6 | HomeWork 4
 
 testapp_IP = 84.201.129.36
