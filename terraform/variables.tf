@@ -10,9 +10,12 @@ variable zone {
   default = "ru-central1-a"
 }
 variable public_key_path {
-  # Описание переменной
   description = "C:/Users/matveev.al/.ssh/ubuntu.pub"
 }
+variable private_key_path {
+  description = "C:/Users/matveev.al/.ssh/ubuntu"
+}
+
 variable image_id {
   description = "Disk image"
 }
@@ -22,6 +25,8 @@ variable subnet_id {
 variable service_account_key_file {
   description = "D:/matveev/otus/devops/terraform/key.json"
 }
-variable private_key_path {
-  description = "C:/Users/matveev.al/.ssh/ubuntu"
+
+variable count_app {
+  description = "count"
+  default = 1
 }
