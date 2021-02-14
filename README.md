@@ -1,5 +1,15 @@
 # matveevelli_infra
 matveevelli Infra repository
+###   Lesson 8 | HomeWork 6
+
+установлен terraform
+поднята ВМ из образа созданного через packer
+поднят балансировщик
+поднято 2 ВМ с полным описанием каждой - проблема в том что БД разные между ВМ
+балансировщик распределяет между нодами
+поднято 2 ВМ через **count * 2**
+**name = "reddit-app-${count.index}"**
+
 ###   Lesson 7 | HomeWork 5
 
 установлен packer
