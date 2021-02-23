@@ -1,6 +1,6 @@
 {
-        "folder_id": "1o5c8gqgtb5divowh6k2",
-        "source_image_id": "fl1zwft2ygz7216o6msp",
-        "path_srv_acc_key_file": "/home/folder/key.json",
-        "ssh_username": "ubuntu"
+    "folder_id": "b1gnrgjra25rgmlgd8gf",
+    "source_image_id": "fd8r9u2laf181s38k2cr",
+    "path_srv_acc_key_file": "D:/matveev/otus/devops/key.json",
+    "ssh_username": "ubuntu"
 }
