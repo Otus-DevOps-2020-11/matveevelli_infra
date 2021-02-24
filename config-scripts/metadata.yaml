@@ -1,0 +1,9 @@
+#cloud-config
+users:
+  - name: yc-user
+    ssh-authorized-keys: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC1TuU5bC+luJPXKwfuO7pVZCJWXcOLB/r0gLUP1dqJ5wh5SpQkIDP2FrZHR30C2PyhGPAWYHeRandkW4kS25RxcR2v3D4EIMqXCXf+5X8Go/G0/hiibRiHgwV1kym5ZVFuFAUulG+ut4nBsVmlZzC3WECbmg8p1IF2HM+mXkZSY4ioce2XrSfbcd/t0AqnTm0Siq9/Vv6HjHIMj3zrZz7MttR3WulgX/3Vg5u1NMxEiw6mmva79tF/9gw2AJBrhVFR0C8mXDTS4sKDIMy4MWgIWxgcfbMOZIdUZJ+6wUTIKcel9PKfhS/bEmPdJTW67d5TfA0AywQk2cNg8DzYZFylivigmIL8OBaxMhzHCxRSmTqKDtsiuKmfCetE7Ub9aVp2i7Vl2CtxBohoe5GZph2uFkAbUUxKLBF3KDjD8rgg8msyWZvUhoOnIdA1qYcIMEGpJrZywVaDj0zitXq+UyY/8uYj/pf8hGOUQBzrTbPxlzNJvxoawSbvrNaet1IUPWM= appuser
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    groups: sudo
+    shell: /bin/bash
+runcmd:
+ - curl https://raw.githubusercontent.com/Otus-DevOps-2020-11/matveevelli_infra/cloud-testapp/install_ruby.sh | bash && curl https://raw.githubusercontent.com/Otus-DevOps-2020-11/matveevelli_infra/cloud-testapp/install_mongodb.sh | bash && curl https://raw.githubusercontent.com/Otus-DevOps-2020-11/matveevelli_infra/cloud-testapp/deploy.sh | bash
