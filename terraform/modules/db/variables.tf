@@ -3,7 +3,7 @@ variable db_disk_image {
   default = "fd8hvagqpehdiko2qqmi"
 }
 variable public_key_path {
-  description = "C:/Users/matveev.al/.ssh/ubuntu.pub"
+  description = "/Users/matveev/.ssh/ubuntu.pub"
 }
 variable subnet_id {
   description = "Subnet"
