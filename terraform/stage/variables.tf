@@ -38,3 +38,11 @@ variable db_disk_image {
   description = "Disk image for reddit db"
   default     = "fd8hvagqpehdiko2qqmi"
 }
+
+variable internal_ip_address_db {
+  description = "internal_ip_address_db"
+  default     = "1"
+}
+output "internal_ip_address_db" {
+  value = module.db.internal_ip_address_db
+}
