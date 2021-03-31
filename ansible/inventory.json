@@ -1,7 +1,7 @@
 {
   "app": {
     "hosts": [
-      "84.201.135.43"
+      "84.201.131.50"
    ],
    "vars": {
       "example_var": "value"
@@ -9,7 +9,15 @@
   },
   "db": {
     "hosts": [
-      "84.201.128.154" 
+      "84.201.133.47"
+   ],
+   "vars": {
+      "example_var": "value"
+   }
+  },
+  "db_internal": {
+    "hosts": [
+      "10.130.0.16"
    ],
    "vars": {
       "example_var": "value"

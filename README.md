@@ -1,12 +1,21 @@
 # matveevelli_infra
 matveevelli Infra repository
+
+###   Lesson 10 | HomeWork 8
+
+- Написан деплой по принципу "один playbook, один сценарий" - `ansible/reddit_app_one_play.yml`
+- Написан деплой по принципу "один playbook, несколько сценариев" - `ansible/reddit_app_multiple_plays.yml`
+- Написан деплой по принципу "несколько playbooks" - ansible/site.yml, ansible/db.yml, ansible/app.yml, `ansible/deploy.yml`
+- добавлено автообнаружение db_instance прииспользовании плейбука app.yml
+- изменен провижинг в packer на ansible
+
 ###   Lesson 9 | HomeWork 7
 
 - установлен `ansible` на локальной машине
 - запущена инфраструктура terraform из stage
 - создан `ansible.cfg` с необходимыми параметрами
 - создан файл статического inventory в INI-формате
-удалённые хосты и группы доступны по команде ping 
+удалённые хосты и группы доступны по команде ping
 - создан и выполнен простой playbook
 команда для запуска `ansible-playbook clone.yml`
 - после повторного выполнения playbook результат - `changed=0`
