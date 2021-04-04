@@ -4,21 +4,6 @@
       debug:
         msg: "This host is in {{ env }} environment!!!"
 
-    - name: install git and ruby
-      become: yes
-      become_user: root
-      become_method: sudo
-      apt:
-        update_cache: yes
-        name: "{{ item }}"
-        state: latest
-      loop:
-        - git
-        - ruby-full
-        - ruby-bundler
-        - build-essential
-      tags: deploy-tag
-
     - name: Add unit file for Puma
       copy:
         src: puma.service
