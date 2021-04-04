@@ -1,7 +1,7 @@
 # matveevelli_infra
 matveevelli Infra repository
 
-###   Lesson 10 | HomeWork 8
+###   Lesson 11 | HomeWork 9
 
 - Созданы отдельные роли для app и db на основе ansible-galaxy
 - Добавлена таска для вывода информации об актуальном окружении
