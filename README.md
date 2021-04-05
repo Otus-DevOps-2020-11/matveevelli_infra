@@ -1,6 +1,16 @@
 # matveevelli_infra
 matveevelli Infra repository
 
+###   Lesson 11 | HomeWork 9
+
+- Созданы отдельные роли для app и db на основе ansible-galaxy
+- Добавлена таска для вывода информации об актуальном окружении
+- Плейбуки перенесены в каталог playbooks
+- Старые файлы перенесены в каталог old, отредактированы конфиги packer
+- Улучшен файл ansible.cfg
+- Добавлена роль nginx из ansible-galaxy, приложение доступно по 80 порту
+- Добавлен плейбук для создания пользователей, конфигурация зашифрована с помощью ansible vault
+
 ###   Lesson 10 | HomeWork 8
 
 - Написан деплой по принципу "один playbook, один сценарий" - `ansible/reddit_app_one_play.yml`
