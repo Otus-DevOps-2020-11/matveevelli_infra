@@ -1,6 +1,35 @@
 # matveevelli_infra
 matveevelli Infra repository
 
+###   Lesson 12 | HomeWork 10
+
+- Установлен Vagrant Molecule и Testinfra в venv
+- Установлен Virtualbox
+- Написан Vagrantfile, подняты виртуалки app и db
+- Доработаны провижнеры в вагрантфайле
+- добавлен плейбук с установкой python
+- Добавлены тэги install для db и ruby для app
+- Вынесены таски в отдельные файлы в ролях `{role}/tasks/* `, теперь они указываются по порядку в `{role}/tasks/main.yml`
+- Определены переменные по умолчанию в `{role}/defaults/main.yml`
+- Unit файл перенесен из ./files в ./templates с расширением .j2 для параметризации `{{ deploy_user }}`
+- Параметризованы используемые плейбуки переменной `{{ deploy_user }}`
+- В vagrantfile добавлено переопределение переменной "`deploy_user" => "ubuntu"`
+- * Добавлено проксирование nginx в `extra_vars: nginx_sites`
+- Инициализировал заготовки и создал `default/default_test.py` для molecule
+- Отредактирован плейбук molecule
+- Успешно прогнаны тесты
+- Написан тест к роли db проверяющий доступность монги
+```
+    def test_mongo_port(host):
+        mongo_port = host.socket("tcp://0.0.0.0:27017")
+        assert mongo_port.is_listening ```
+- Использованы роли db и app в плейбуках `packer_db.yml` и `packer_app.yml` с необходимыми тегами
+- Указан путь к ролям
+```
+"extra_arguments": ["--tags","ruby"],
+ "ansible_env_vars": ["ANSIBLE_ROLES_PATH={{ pwd }}/ansible/roles"]````
+
+
 ###   Lesson 11 | HomeWork 9
 
 - Созданы отдельные роли для app и db на основе ansible-galaxy
